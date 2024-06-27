@@ -12,7 +12,7 @@ The vulnerable code location is com.inxedu.os.common.controller.ImageUploadContr
 
 This code is decompiled from the project jar package（**inxedu-jar.jar**）
 
-![image-20240515220345844](images\image-20240515220345844.png)
+![image-20240515220345844](images/image-20240515220345844.png)
 
 Line 67 check the extention of the file uploaded and restricts the upload of files ending in **jsp** ,while we can control the value of fileType by changing the parameter value of fileType, and uploading files ending with jspx bypasses the restriction.
 
